@@ -1,0 +1,2 @@
+To import the json data from the student_data.json file into your django model, run the following command into your terminal-
+python3 manage.py loaddata student_data.json

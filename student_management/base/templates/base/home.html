@@ -1,0 +1,195 @@
+{% extends 'main.html'%} {%block content%}
+<style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* *{
+    background:#F6FFF8;
+  } */
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+    margin-left: 2%;
+  }
+  /* .home--container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: aqua;
+  } */
+
+  .table {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    border-right: black;
+    border-left: black;
+  }
+
+  .table thead{
+    background-color: #63736A;
+    background-color: #2F3E46;
+    color: white;
+    border-top: black;
+  }
+
+  .table tbody tr:nth-child(even){
+    background-color: #A4C3B2;
+    background-color: #84A98C;
+  }
+
+  .table tbody tr:nth-child(odd){
+    background-color: #CCE3DE;
+    background-color: #CAD2C5;
+  }
+
+  .table tbody tr:nth-last-child(1){
+    border-bottom: black;
+  }
+
+  .page-link{
+    color: #2F3E46;
+  }
+
+  .page-item.active .page-link{
+    background-color: #2F3E46;
+    border-color: #2F3E46;
+    color: white;
+  } 
+  .page-item.active .page-link:hover{
+    cursor: default;
+  } 
+
+
+  body{
+    background-color: #F6FFF8;
+    background-color: #EAF4F4;
+    background-color: #D1EFB5;
+    background-color: #D3FAD6;
+    background-color: #D2F2BE;
+    background-color: #CAD2C5;
+    background-color: #354F52;
+    background-color: white;
+    background-color: #354F52;
+    height: 100vh;
+    width: 100vw;
+  }
+  .editor{
+    padding-right: 15px;
+  }
+
+  .action a{
+    transition: all 0.5s ease-in-out;
+  }
+
+  .action a:hover i{
+    transform: scale(1.2);
+  }
+
+  .tablewrapper{
+    position: relative;
+    margin-left: 2%;
+  }
+  @media screen and (max-width: 768px) {
+    /* .table {
+      width: 100%;
+    } */
+    .pagebut{
+    float: left;
+    }
+    .adder{
+      margin-right: 0;
+      float: left;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .pagebut{
+    position: absolute;
+    bottom: -10px;
+    right: 15%;
+    }
+    .adder{
+      position: absolute;
+      bottom: 10px;
+      left: 15%;
+    } 
+  }
+  .adder a{
+    text-decoration: none;
+    color: white;
+  }
+  .adder a:hover{
+    color: grey;
+    text-decoration: underline;
+  }
+
+  .adder a:hover i{
+    color: grey;
+  }
+</style>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<body>
+  <div class="home-container">
+    <h1 class="title" data-aos="zoom-in">STUDENT LIST</h1>
+    <!-- <div></div> -->
+    <div class="tablewrapper">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr class=>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Department</th>
+            <th>Hostel</th>
+            <th>Actions</th>
+          </tr> 
+        </thead>
+        <tbody>
+          {% for student in student_list %}
+            <tr>
+              <td>{{ student.name }}</td>
+              <td>{{ student.roll }}</td>
+              <td>{{ student.department }}</td>
+              <td>{{ student.hostel }}</td>
+              <td>
+                
+                <div class="action">
+                  <a href="{%url 'edit' student.id %}" class="editor"><i class="fa-solid fa-pen-to-square" style="color:#63736A ;"></i></a>
+                  <a href="{%url 'delete' student.id%}"><i class="fa-solid fa-trash" style="color: #63736A;"></i></a>
+                </div>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <!-- <div></div> -->
+      <div class="adder">
+        <a href="{%url 'add' %}">Add Student <i class="fa-solid fa-plus" style="color: #ffffff;"></i></a>
+      </div>
+      <br /><br />
+      <div class="pagebut">
+        <nav aria-label="Page navigation example">
+        <ul class="pagination">  
+          {% if student_list.has_previous %}
+          <li class="page-item"><a class="page-link" href="?page=1">&laquo</a></li>
+          <li class="page-item"><a class="page-link" href="?page={{student_list.previous_page_number}}">Previous</a></li>
+          {% endif%}<li class="page-item active" ><a href="#" class="page-link"> Page {{student_list.number}} of
+          {{student_list.paginator.num_pages}}</a></li> {% if student_list.has_next %}
+          <li class="page-item"><a class="page-link" href="?page={{student_list.next_page_number}}">Next</a></li>
+          <li class="page-item"><a class="page-link" href="?page={{student_list.paginator.num_pages}}">&raquo</a></li>
+          {% endif%}
+        </ul>
+        </nav> 
+      </div>
+    </div>  
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init();
+  </script>
+</body>
+{% endblock %}

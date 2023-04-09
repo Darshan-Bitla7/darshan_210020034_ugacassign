@@ -1,0 +1,49 @@
+{% extends 'main.html' %} {% block content %}
+<style>
+  body {
+    background-color: #354f52;
+  }
+  p {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+  }
+  .but {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .but a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .but a:hover {
+    color: grey;
+  }
+  input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: maroon;
+  }
+</style>
+
+<div>
+  <form method="POST">
+    {% csrf_token %}
+    <p>Are you sure you want to delete this?</p>
+    <div class="but">
+      <a href="{{request.META.HTTP_REFERER }}">Go Back</a>
+      <div class="buttonss">
+        <input type="submit" value="YES" />
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock content%}

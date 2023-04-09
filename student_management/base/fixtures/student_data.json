@@ -1,0 +1,262 @@
+[
+  {
+    "model": "base.Student",
+    "pk": 1,
+    "fields": {
+      "name": "Darshan Bitla",
+      "roll": "210020034",
+      "department": "Chemical",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 2,
+    "fields": {
+      "name": "Dev Parekh",
+      "roll": "210020040",
+      "department": "Chemical",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 3,
+    "fields": {
+      "name": "Chirag Rao",
+      "roll": "210040020",
+      "department": "Civil",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 4,
+    "fields": {
+      "name": "Parag Ingle",
+      "roll": "210010065",
+      "department": "Mechanical",
+      "hostel": "2"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 5,
+    "fields": {
+      "name": "Anurag Yadav",
+      "roll": "210040065",
+      "department": "Civil",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 6,
+    "fields": {
+      "name": "Rushikesh Kacchava",
+      "roll": "210040069",
+      "department": "Civil",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 7,
+    "fields": {
+      "name": "Hrithik Mhatre",
+      "roll": "210040075",
+      "department": "Civil",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 8,
+    "fields": {
+      "name": "Tanmay Madavi",
+      "roll": "210020070",
+      "department": "Chemical",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 9,
+    "fields": {
+      "name": "Sanket Pawar",
+      "roll": "210020132",
+      "department": "Chemical",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 10,
+    "fields": {
+      "name": "Kartik Khandelwal",
+      "roll": "210040065",
+      "department": "Civil",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 11,
+    "fields": {
+      "name": "Kounish Das",
+      "roll": "210040054",
+      "department": "Civil",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 12,
+    "fields": {
+      "name": "Dhurbajyoti Hazarika",
+      "roll": "210020042",
+      "department": "Chemical",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 13,
+    "fields": {
+      "name": "Aditya Edlabadkar",
+      "roll": "210020046",
+      "department": "Chemical",
+      "hostel": "9"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 14,
+    "fields": {
+      "name": "Dhananjay Deshmukh",
+      "roll": "210070065",
+      "department": "Electrical",
+      "hostel": "3"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 15,
+    "fields": {
+      "name": "Ninad Gajbhiye",
+      "roll": "210040099",
+      "department": "Civil",
+      "hostel": "3"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 16,
+    "fields": {
+      "name": "Shivesh Gupta",
+      "roll": "210020147",
+      "department": "Mechanical",
+      "hostel": "5"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 17,
+    "fields": {
+      "name": "Rakshith Poojary",
+      "roll": "210020090",
+      "department": "Metallurgy",
+      "hostel": "6"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 18,
+    "fields": {
+      "name": "Akarsh Jain",
+      "roll": "210020059",
+      "department": "Chemical",
+      "hostel": "6"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 19,
+    "fields": {
+      "name": "Prajwal B",
+      "roll": "210020080",
+      "department": "Chemical",
+      "hostel": "6"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 20,
+    "fields": {
+      "name": "Kanad Shende",
+      "roll": "210050065",
+      "department": "Computer Science",
+      "hostel": "2"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 21,
+    "fields": {
+      "name": "Raidaw Basumatary",
+      "roll": "21D170034",
+      "department": "Energy",
+      "hostel": "5"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 22,
+    "fields": {
+      "name": "Shobhit Maheshwari",
+      "roll": "210070081",
+      "department": "Electrical",
+      "hostel": "5"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 23,
+    "fields": {
+      "name": "Mankirat Chawla",
+      "roll": "21D100013",
+      "department": "Electrical",
+      "hostel": "15"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 24,
+    "fields": {
+      "name": "Likhith Reddy",
+      "roll": "21B080021",
+      "department": "Economics",
+      "hostel": "6"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 25,
+    "fields": {
+      "name": "Akhilesh Prasad",
+      "roll": "21B030002",
+      "department": "Chemistry",
+      "hostel": "2"
+    }
+  },
+  {
+    "model": "base.Student",
+    "pk": 26,
+    "fields": {
+      "name": "Priyanshi Garg",
+      "roll": "210040118",
+      "department": "Economics",
+      "hostel": "15"
+    }
+  }
+]
