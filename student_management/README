@@ -1,0 +1,8 @@
+General- To add, edit or delete any student data, one must login to the system first otherwise it is view-only for guest visitors.
+         To create a superuser run the command '-python3 manage.py createsuperuser' in the project terminal and then with the login credentials thus 
+         generated you can login to the page and manipulate the database.
+         
+Database population- To feed data into the database,(only when you run it the first time) run the command in your project terminal 
+                    -'python3 manage.py loaddata student_data.json'. This will load the json data from 'student_data.json' into the django models
+                  
+ External Libraries used- AOS=Animate On Scroll JavaScript library
