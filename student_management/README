@@ -3,6 +3,7 @@ General- To add, edit or delete any student data, one must login to the system f
          generated you can login to the page and manipulate the database.
          
 Database population- To feed data into the database,(only when you run it the first time) run the command in your project terminal 
-                    -'python3 manage.py loaddata student_data.json'. This will load the json data from 'student_data.json' into the django models
+                    -'python3 manage.py loaddata student_data.json'. This will load the json data from 'student_data.json' into the django models.
+                     I have added dummy student data to the the student_data.json file.
                   
  External Libraries used- AOS=Animate On Scroll JavaScript library
